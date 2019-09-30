@@ -16,7 +16,10 @@ export default {
   methods: {
     changeFatherData() {
       this.$emit('change')
-      console.log('父元素的参数为', this.params)
+      console.log('父元素的参数为', this.params) // hello
+      // this.$nextTick(() => {
+      //   console.log('父元素的参数为', this.params)  // vue
+      // })
     }
   }
 }
